@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2-SkillsTest</title>
+
+     <!-- BOOTSTRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="OBBG.png" alt="Logo" style="width:300px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-1g-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home-section">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Enroll</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact Us</a>
+                </li>
+
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Campuses</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#greenhills">Greenhills</a></li>
+                        <li><a class="dropdown-item" href="#fairview">Fairview</a></li>
+                        <li><a class="dropdown-item" href="#las-pinas">Las Piñas</a></li>
+                        <li><a class="dropdown-item" href="#angeles">Angeles</a></li>
+                        <li><a class="dropdown-item" href="#sta-ana">Sta. Ana</a></li>
+                        <li><a class="dropdown-item" href="#puerto-galera">Puerto Galera</a></li>
+                        
+                    </ul>
+                    </li>
+
+            </ul>
+            
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="submit">Search</button>   
+            </form>
+        </div>
+    </nav><br>
+
+    <center>
+     <img src="OBMC LOGO 2024-Circle.png" alt="Logo" height="50px" width=""> <h1>OBMC Student Enrollment Form</h1>
+    </center>
+
+   <center> Fill out the page below for the upcoming school year.</center>
+
+      <div class="vertical-layout bg-light p-3 mb-3 rounded">
+    <h2>Student Information</h2>
+        <form>
+            <!-- ROW 1 - NAME -->
+             <div class="row">
+                <div class="col-md-6">
+                <label class="form-label" for="inputFirstname">First name</label>
+                <input type="firstname" class="form-control"
+
+                id="inputFirstname" placeholder="Enter student's first name">
+                </div>
+
+                <div class="col-md-6">
+                <label class="form-label" for="inputLastname">Last name</label>
+                <input type="lastname" class="form-control"
+
+                id="inputLastname" placeholder="Enter student's last name">
+                </div>
+            </div>
+            <!-- ROW 2 - BIRTHDATE, GENDER, LEVEL -->
+            <div class="row">
+                <div class="col-md-4">
+                <label class="form-label" for="inputBdate">Birthdate</label>
+                <input type="date" class="form-control"
+
+                id="inputBdate" placeholder="dd/mm/yyyy">
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label" for="inputGender">Gender</label>
+                <input type="gender" class="form-control"
+
+                id="inputGender" placeholder="Enter student's gender">
+            </div>
+
+              <div class="col-md-4">
+                <label class="form-label" for="inputGLevel">Grade Level</label>
+                <input type="glevel" class="form-control"
+
+                id="inputGLevel" placeholder="Enter student's grade level">
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="vertical-layout bg-light p-3 mb-3 rounded">
+            <h2>Contact Information</h2>
+                <form>
+                  <!-- EMAIL -->
+                    <div class="email mb-3">
+                        <label class="form-label" for="inputEmail">Email</label>
+                        <input type="email" class="form-control" 
+
+                        id="inputEmail" placeholder="cody@example.com">
+                    </div>  
+                    <!-- NUMBER -->
+                    <div class="Fullname mb-3">
+                        <label class="form-label" for="inputnumber">Contact Number</label>
+                        <input type="number" class="form-control"
+
+                        id="inputFullname" placeholder="+67 0676-414-2161">
+
+                    </div>
+                    
+            <!-- BUTTON -->
+                <form>
+                    <h2>Mode of learning</h2>
+			   			<input type="radio" id="online" name="online">
+			   			<label for="online">Online</label>
+                    <br>
+			   			<input type="radio" id="Face-to-Face" name="Face-to-Face">
+			   			<label for="Face-to-Face">Face-to-Face</label>
+                    <br>
+                        <input type="checkbox" id="confirm" name="confirm">
+			   			<label for="confirm">I confirm that all informatiomn is complete and correct</label>
+
+                        
+                </form>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit Enrollment</button>   
+
+        </form>
+    </div>
+
+</body>
+</html>
